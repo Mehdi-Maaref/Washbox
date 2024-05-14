@@ -1,6 +1,5 @@
-
 #include "../include/bspLed.hpp"
-#include "CommandLed.hpp"
+#include <CommandLed.hpp>
 
 CommandLed::CommandLed(IDigitalIo& io){
     this->io = &io;
@@ -9,10 +8,10 @@ CommandLed::CommandLed(IDigitalIo& io){
 
 
 void CommandLed::ActivateLight(){
-  io->digitalWrite(23,true);//LIGHT, LIGHTON
+  io->digitalWrite(LIGHT,LIGHTON);//LIGHT, LIGHTON
 }
 
 void CommandLed::DiactivateLight(){
-  io->digitalWrite(23,false);//LIGHT, LIGHTOFF
+  io->digitalWrite(LIGHT,LIGHTOFF);//LIGHT, LIGHTOFF
 }
 
