@@ -12,7 +12,7 @@ void setup() {
   configApplication();
   // pour avoir un écho de débogage sur la console du PC
   Serial.begin(115200);
-  Serial.println("programme Washbox");
+  Serial.println("programme Washborererx");
   //currentTime = millis();
 }
 
